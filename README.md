@@ -94,6 +94,12 @@ uv run pytest tests/
 
 ---
 
+## 🤝 Contributing
+
+Contributions are welcome! Please check out [CONTRIBUTING.md](CONTRIBUTING.md) for local setup and guidelines. Feel free to submit an issue or a PR proposing new recipes in `recipes/`.
+
+---
+
 ## 👤 Author
 
 **Udbhav Shrinet**  

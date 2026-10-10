@@ -1,0 +1,28 @@
+name: Feature or Recipe Proposal
+description: Propose a new data science agent recipe or statistical diagnostic feature
+labels: ["enhancement", "recipe-proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for proposing a recipe or enhancement for ds-agent-playbook!
+  - type: input
+    id: recipe-name
+    attributes:
+      label: Recipe or Feature Name
+      placeholder: "e.g., Recipe 04: Automated Time-Series Lag & Rolling Feature Synthesis"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Motivation
+      placeholder: What data science bottleneck does this resolve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Implementation
+      placeholder: Outline the Polars/DuckDB operations or heuristics.
+    validations:
+      required: true
