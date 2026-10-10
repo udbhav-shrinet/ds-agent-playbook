@@ -1,0 +1,28 @@
+[project]
+name = "ds-agent-playbook"
+version = "0.1.0"
+description = "Autonomous, zero-bloat agentic recipes for Data Science: automated EDA, data cleansing, feature engineering, and statistical diagnostics."
+readme = "README.md"
+authors = [
+    { name = "Udbhav Shrinet", email = "udbhav.singh.shrinet@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "click>=8.5.0",
+    "duckdb>=1.5.6",
+    "polars>=2.0.0",
+    "pydantic>=2.14.0",
+    "rich>=15.0.0",
+]
+
+[project.scripts]
+ds-agent = "ds_agent_playbook.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

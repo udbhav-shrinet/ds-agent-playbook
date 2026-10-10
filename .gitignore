@@ -1,0 +1,14 @@
+target/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.parquet
+*.csv
+*.duckdb
+.DS_Store
+.idea/
+.vscode/
+dist/
+build/
+*.egg-info/
